@@ -1,0 +1,67 @@
+ .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.tag {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.tag[data-size="1"] {
+    font-size: 12px;
+    background-color: #3498db;
+}
+
+.tag[data-size="2"] {
+    font-size: 16px;
+    background-color: #2ecc71;
+}
+
+.tag[data-size="3"] {
+    font-size: 20px;
+    background-color: #f1c40f;
+}
+
+.tag[data-size="4"] {
+    font-size: 24px;
+    background-color: #e67e22;
+}
+
+.tag[data-size="5"] {
+    font-size: 28px;
+    background-color: #e74c3c;
+}
+.tag[data-size="6"] {
+    font-size: 12px;
+    background-color: #3498db;
+}
+
+.tag[data-size="7"] {
+    font-size: 16px;
+    background-color: #2ecc71;
+}
+
+.tag[data-size="8"] {
+    font-size: 20px;
+    background-color: #f1c40f;
+}
+
+.tag[data-size="9"] {
+    font-size: 24px;
+    background-color: #e67e22;
+}
+.tag[data-size="10"] {
+    font-size: 16px;
+    background-color: #2ecc71;
+}
+
+.tag:hover {
+    transform: scale(1.1);
+}
