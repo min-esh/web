@@ -1,0 +1,59 @@
+.interactive-logo-container {
+    display: inline-block;
+    perspective: 1000px;
+  }
+  
+  .interactive-logo {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease-in-out;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .interactive-logo::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset, 0 0 10px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transition: box-shadow 0.4s ease-in-out;
+  }
+  
+  .interactive-logo:hover {
+    transform: rotateY(-15deg);
+  }
+  
+  .interactive-logo.clicked {
+    transform: rotateY(20deg);
+  }
+  
+  .interactive-logo.clicked .click-here-link {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .click-here-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(20px);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    z-index: 2;
+  }
+  
+  .profile-picture {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
